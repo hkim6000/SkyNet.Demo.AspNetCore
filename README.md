@@ -177,7 +177,7 @@ All components from SkyNet ToolKit:<br>
 •	DialogBox, FilterSection, MenuList<br>
 •	TitleSection2, ItemPanel, TreeView<br><br>
 
-<h3>Framework Philosophy</h3><br>
+<h3>Framework Philosophy</h3>
 <b>Server-Centric, AJAX-Driven</b>br>
 <b>SkyNet embraces a server-centric architecture where:</b><br>
 •	Business logic stays on the server (secure, maintainable)<br>
@@ -196,14 +196,14 @@ Rapid Development<br>
 •	From idea to production in days, not months<br><br>
 
  
-<h3>Technology Stack</h3><br>
+<h3>Technology Stack</h3>
 •	Framework: ASP.NET Core (.NET 10)<br>
 •	Middleware: Custom SkyNet IHandler<br>
 •	Frontend: HTML5, CSS3, Minimal JavaScript<br>
 •	Authentication: Customizable, Cookie-based with encrypted AppKey in Showcase version<br>
 •	Deployment: IIS, Kestrel, Docker-ready<br>
   
-<h3>Use Cases</h3><br>
+<h3>Use Cases</h3>
 <b>SkyNet is perfectly suited for:</b><br>
 •	✅ Enterprise internal portals<br>
 •	✅ Business management systems (ERP, CRM)<br>
