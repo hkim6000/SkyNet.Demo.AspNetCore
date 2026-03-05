@@ -12,25 +12,26 @@ SkyNet is the next-generation evolution of the SKYLITE framework(.Net framework 
 
 <h3>Architectural and Feature Highlights</h3>
 <b>1. Core Architectural Patterns & Design Choices</b>b<br>
-The project consistently follows several powerful architectural patterns that are central to the SkyNet philosophy:<br>
+The project consistently follows several powerful architectural patterns that are central to the SkyNet philosophy:<br><br>
 
-<b>Middleware-Based Architecture</b>
-•	Custom IHandler Middleware: SkyNet operates as ASP.NET Core middleware, registered via app.UseMiddleware<IHandler>() in Program.cs
-•	Clean integration with the ASP.NET Core pipeline while maintaining framework independence
-•	Full control over request/response lifecycle without the constraints of MVC or Razor Pages
+<b>Middleware-Based Architecture</b><br>
+•	Custom IHandler Middleware: SkyNet operates as ASP.NET Core middleware, registered via app.UseMiddleware<IHandler>() in Program.cs<br>
+•	Clean integration with the ASP.NET Core pipeline while maintaining framework independence<br>
+•	Full control over request/response lifecycle without the constraints of MVC or Razor Pages<br>
 
-Single-Page Application (SPA)-like Navigation
-•	The application avoids full page reloads for most actions
-•	A main "shell" page (e.g., XysUser/XysUser.cs) loads the master layout
-•	Content area is dynamically replaced with partial views (MV or EV) using ApiResponse commands (SetElementContents)
-•	Creates a seamless, modern user experience with minimal JavaScript
-Robust Role-Based Access Control (RBAC)
-•	Security is deeply integrated throughout the framework
-•	The WebBase class centralizes permission checking for both page access (ViewAccess()) and specific actions/methods (ViewMethods())
-•	UI is dynamically rendered based on these permissions, ensuring users only see and interact with functions they are authorized to use
-•	Database-driven permission matrix for flexible security configuration
-________________________________________
-2. Key Modules and Functionality
+<b>Single-Page Application (SPA)-like Navigation</b><br>
+•	The application avoids full page reloads for most actions<br>
+•	A main "shell" page (e.g., XysUser/XysUser.cs) loads the master layout<br>
+•	Content area is dynamically replaced with partial views (MV or EV) using ApiResponse commands (SetElementContents)<br>
+•	Creates a seamless, modern user experience with minimal JavaScript<br>
+
+<b>Robust Role-Based Access Control (RBAC)</b><br>
+•	Security is deeply integrated throughout the framework<br>
+•	The WebBase class centralizes permission checking for both page access (ViewAccess()) and specific actions/methods (ViewMethods())<br>
+•	UI is dynamically rendered based on these permissions, ensuring users only see and interact with functions they are authorized to use<br>
+•	Database-driven permission matrix for flexible security configuration<br><br>
+
+<b>2. Key Modules and Functionality</b>b<br>
 Authentication Flow
 •	XysSignin, XysPass, XysVerify: Complete and secure authentication module
 •	User lookup, password verification (encrypted)
