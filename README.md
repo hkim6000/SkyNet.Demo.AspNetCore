@@ -31,58 +31,60 @@ The project consistently follows several powerful architectural patterns that ar
 •	UI is dynamically rendered based on these permissions, ensuring users only see and interact with functions they are authorized to use<br>
 •	Database-driven permission matrix for flexible security configuration<br><br>
 
-<b>2. Code-Level Best Practices</b><br>
+<b>2. Code-Level Best Practices</b><br><br>
 <b>Security First</b><br>
 •	Parameterized Queries: All data manipulation functions use SqlParameter lists to prevent SQL injection vulnerabilities<br>
 •	Encrypted Passwords: Encryptor.EncryptData() for secure password storage<br>
 •	Encrypted Cookies: SerializeObjectEnc() for secure session data<br>
 •	Time-Limited Download Tokens: File downloads protected with encrypted, expiring URLs<br>
 •	Method-Level Permissions: Every API method checked against user role permissions<br><br>
-Clean Architecture
-•	Centralized Constants: References structure provides single source for page names, session keys, element IDs
-•	Separation of Concerns: Clear boundaries between data access, business logic, and presentation
-•	Reusable Components: Base classes and shared utilities minimize code duplication
-Thin Client Pattern
-•	JavaScript files kept minimal
-•	Primary responsibilities: DOM data collection and $ApiRequest initiation
-•	All significant logic, validation, and UI orchestration handled securely on server
-•	Reduces client-side complexity and attack surface
-Modern .NET Practices
-•	Built on ASP.NET Core and .NET 10
-•	Cross-platform compatibility (Windows, Linux, macOS)
-•	Can run on IIS, Kestrel, or Docker
-•	Cloud-ready and container-friendly
+<b>Clean Architecture</b><br>
+•	Centralized Constants: References structure provides single source for page names, session keys, element IDs<br>
+•	Separation of Concerns: Clear boundaries between data access, business logic, and presentation<br>
+•	Reusable Components: Base classes and shared utilities minimize code duplication<br>
+<b>Thin Client Pattern</b><br>
+•	JavaScript files kept minimal<br>
+•	Primary responsibilities: DOM data collection and $ApiRequest initiation<br>
+•	All significant logic, validation, and UI orchestration handled securely on server<br>
+•	Reduces client-side complexity and attack surface<br>
+<b>Modern .NET Practices</b><br>
+•	Built on ASP.NET Core and .NET 10<br>
+•	Cross-platform compatibility (Windows, Linux, macOS)<br>
+•	Can run on IIS, Kestrel, or Docker<br>
+•	Cloud-ready and container-friendly<br>
 ________________________________________
-Project Structure
-SkyNetDemo/
-├── Codes/              # Business logic classes (C#)
-│   ├── XysUser         # User management main page
-│   ├── XysUserMV       # User list view
-│   ├── XysUserEV       # User edit view
-│   ├── XysRole         # Role management
-│   ├── XysPermission   # Permission matrix
-│   └── ...
-├── Bin/
-│   └── SkyNet.dll ++        # ⭐ Core framework (single dependency)
-├── appConfig/
-│   └── application.cfg    # Application configuration
-├── data/                  # Data storage folder
-├── htmls/                 # HTML email templates
-├── images/                # Static images
-├── logs/                  # Application logs
-├── scripts/               # JavaScript files
-│   ├── Home.js
-│   └── WebScript.js
-├── styles/                # CSS stylesheets
-│   ├── Home.css
-│   └── WebStyle.css
-├── temp/                  # Temporary files
-├── Program.cs             # ASP.NET Core startup
+
+<h3>Project Structure</h3><br><br>
+ASPNETCoreWeb/<br>
+├── Codes/              # Business logic classes (C#)<br>
+│   ├── XysUser         # User management main page<br>
+│   ├── XysUserMV       # User list view<br>
+│   ├── XysUserEV       # User edit view<br>
+│   ├── XysRole         # Role management<br>
+│   ├── XysPermission   # Permission matrix<br>
+│   └── ...<br>
+├── Bin/<br>
+│   └── SkyNet.dll ++        # ⭐ Core framework (single dependency)<br>
+├── appConfig/<br>
+│   └── application.cfg    # Application configuration<br>
+├── data/                  # Data storage folder<br>
+├── htmls/                 # HTML email templates<br>
+├── images/                # Static images<br>
+├── logs/                  # Application logs<br>
+├── scripts/               # JavaScript files<br>
+│   ├── Home.js<br>
+│   └── WebScript.js<br>
+├── styles/                # CSS stylesheets<br>
+│   ├── Home.css<br>
+│   └── WebStyle.css<br>
+├── temp/                  # Temporary files<br>
+├── Program.cs             # ASP.NET Core startup<br><br>
 
 
-**** unzip "bin.zip" and copy to project folder
-________________________________________
-Getting Started
+**** unzip "bin.zip" and copy to project folder<br>
+
+
+<h3>Getting Started</h3><br>
 
 //////////////////////////////////////////////////////////
 //  0.prerequisite : install - view terminal & Edit project file
