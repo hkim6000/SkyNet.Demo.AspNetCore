@@ -31,32 +31,32 @@ The project consistently follows several powerful architectural patterns that ar
 •	UI is dynamically rendered based on these permissions, ensuring users only see and interact with functions they are authorized to use<br>
 •	Database-driven permission matrix for flexible security configuration<br><br>
 
-<b>2. Key Modules and Functionality</b>b<br>
-Authentication Flow
-•	XysSignin, XysPass, XysVerify: Complete and secure authentication module
-•	User lookup, password verification (encrypted)
-•	Cookie-based session management (AppKey)
-•	Sign-up flow with email-based One-Time Passcodes (OTP)
-•	Two-factor authentication support
-WebBase - The Application's Core
-•	Central class that inherits from WebPage
-•	Provides shared functionality to all other pages: 
-o	Session management
-o	Permission checking
-o	Dynamic menu/button generation
-o	Translation dictionary loading
-o	File upload/download handling
-•	Drastically reduces code duplication and enforces consistency
-Data-Driven UI (SQLGridSection)
-•	"Main View" (*MV) pages showcase the power of SQLGridSection
-•	Entire UI for displaying, paging, sorting, and filtering complex data generated from a single, declarative SQLGridInfo object
-•	Directly tied to SQL queries with full parameterization
+<b>2. Key Modules and Functionality</b><br>
+<b>Authentication Flow</b><br>
+•	XysSignin, XysPass, XysVerify: Complete and secure authentication module<br>
+•	User lookup, password verification (encrypted)<br>
+•	Cookie-based session management (AppKey)<br>
+•	Sign-up flow with email-based One-Time Passcodes (OTP)<br>
+•	Two-factor authentication support<br><br>
+<b>WebBase - The Application's Core</b><br>
+•	Central class that inherits from WebPage<br>
+•	Provides shared functionality to all other pages: <br>
+o	Session management<br>
+o	Permission checking<br>
+o	Dynamic menu/button generation<br>
+o	Translation dictionary loading<br>
+o	File upload/download handling<br>
+•	Drastically reduces code duplication and enforces consistency<br>
+<b>Data-Driven UI (SQLGridSection)</b><br>
+•	"Main View" (*MV) pages showcase the power of SQLGridSection<br>
+•	Entire UI for displaying, paging, sorting, and filtering complex data generated from a single, declarative SQLGridInfo object<br>
+•	Directly tied to SQL queries with full parameterization<br>
 •	Built-in features: sorting, pagination, filtering, custom column rendering
-Dynamic Edit Forms
-•	"Edit View" (*EV) pages demonstrate data entry forms using: 
-o	Texts (text, password, date, email, etc.)
-o	Dropdown (with database binding)
-o	CheckBox, Switch, TextArea
+Dynamic Edit Forms<br>
+•	"Edit View" (*EV) pages demonstrate data entry forms using: <br>
+o	Texts (text, password, date, email, etc.)<br>
+o	Dropdown (with database binding)<br>
+o	CheckBox, Switch, TextArea<br>
 o	FileUpload, ImageBox
 •	Contains SaveView and DeleteView logic
 •	Uses parameterized queries for secure database updates
