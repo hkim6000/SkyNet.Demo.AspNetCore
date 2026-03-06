@@ -109,7 +109,7 @@ ASPNETCoreWeb/<br>
 //////////////////////////////////////////////////////////<br>
 // "hotReloadEnabled=true" could interrupt page display while development
 //////////////////////////////////////////////////////////<br><br>
-<b> ⭐ program.cs</b><br><br><br>
+<b> ⭐ program.cs for Asp.Net Core</b><br>
 <b>
 ------------------------------------------------------------------------------<br>
 using SkyNet;<br>
