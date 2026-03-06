@@ -118,14 +118,14 @@ var builder = WebApplication.CreateBuilder(args);<br>
 </b>
 
 //////////////////////////////////////////////////////////<br>
-<b>builder.Services.AddHttpContextAccessor();  //1.Add HttpContext Service</b><br>
+<b>builder.Services.AddHttpContextAccessor();  // 1. Add HttpContext Service</b><br>
 //////////////////////////////////////////////////////////<br>
 
 <b>var app = builder.Build();</b><br>
 
 //////////////////////////////////////////////////////////<br>
-<b>app.UseMiddleware<IHandler>();  //2. use SKYNET.IHANDLER as middleware service</b><br>
-<b>app.UseStaticHttpCurrent(); //3. use static http class service</b><br> 
+<b>app.UseMiddleware<IHandler>();  // 2. use SKYNET.IHANDLER as middleware service</b><br>
+<b>app.UseStaticHttpCurrent();     // 3. use static http class service</b><br> 
 //////////////////////////////////////////////////////////<br>
 
 <br>
