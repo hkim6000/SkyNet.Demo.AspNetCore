@@ -78,7 +78,7 @@ ASPNETCoreWeb/<br>
 │   ├── XysPermission   <br>
 │   └── ...<br>
 ├── bin\Debug\net10.0<br>
-│      └── <b>SkyNet.dll<b> ++ # ⭐ Core framework (single dependency)<br>
+│      └── <b>SkyNet.dll</b>b> ++ # ⭐ SKYNET framework file(single dependency)<br>
 ├── appConfig/<br>
 │   └── application.cfg    # Application configuration<br>
 ├── data/                  # Data storage folder<br>
