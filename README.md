@@ -99,6 +99,16 @@ ASPNETCoreWeb/<br>
 
 <h3>Getting Started</h3><br>
 
+//////////////////////////////////////////////////////////<br>
+//  Prerequisite : install thru menu-view-terminal in Visual Studio<br>
+//  - dotnet add package Microsoft.Data.SqlClient<br>
+//  - dotnet add package System.Drawing.Common<br>
+//  - Add option to Properties/launchsetting.json file  : "hotReloadEnabled": false<br>
+//////////////////////////////////////////////////////////<br>
+// "hotReloadEnabled=true" could interrupt page display while development
+//////////////////////////////////////////////////////////<br><br><br>
+
+
 <b>program.cs</b><br><br>
 <b>
 using System.Reflection.Metadata;<br>
@@ -107,15 +117,6 @@ using SkyNet;<br>
 var builder = WebApplication.CreateBuilder(args);<br>
 <br>
 </b>
-
-//////////////////////////////////////////////////////////<br>
-//  Prerequisite : install thru menu-view-terminal in Visual Studio<br>
-//  - dotnet add package Microsoft.Data.SqlClient<br>
-//  - dotnet add package System.Drawing.Common<br>
-//  - Add option to Properties/launchsetting.json file  : "hotReloadEnabled": false<br>
-//////////////////////////////////////////////////////////<br>
-// "hotReloadEnabled=true" could interrupt page display while development
-//////////////////////////////////////////////////////////<br>
 
 //////////////////////////////////////////////////////////<br>
 <b>builder.Services.AddHttpContextAccessor();  //1.Add HttpContext Service</b><br>
