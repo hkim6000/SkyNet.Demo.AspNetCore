@@ -70,15 +70,15 @@ ________________________________________
 
 <h3>Project Structure</h3><br>
 ASPNETCoreWeb/<br>
-├── Codes/              # Business logic classes (C#)<br>
-│   ├── XysUser         # User management main page<br>
-│   ├── XysUserMV       # User list view<br>
-│   ├── XysUserEV       # User edit view<br>
-│   ├── XysRole         # Role management<br>
-│   ├── XysPermission   # Permission matrix<br>
+├── Codes/              # web page classes (C#)<br>
+│   ├── XysUser         # no routing rule, free webpage class location
+│   ├── XysUserMV       # web page class can be anywhere in the project folder
+│   ├── XysUserEV       
+│   ├── XysRole         
+│   ├── XysPermission   
 │   └── ...<br>
-├── Bin/<br>
-│   └── SkyNet.dll ++        # ⭐ Core framework (single dependency)<br>
+├── bin\Debug\net10.0<br>
+│              └── SkyNet.dll ++        # ⭐ Core framework (single dependency)<br>
 ├── appConfig/<br>
 │   └── application.cfg    # Application configuration<br>
 ├── data/                  # Data storage folder<br>
