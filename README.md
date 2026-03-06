@@ -106,10 +106,8 @@ ASPNETCoreWeb/<br>
 //  - Add option to Properties/launchsetting.json file  : "hotReloadEnabled": false<br>
 //////////////////////////////////////////////////////////<br>
 // "hotReloadEnabled=true" could interrupt page display while development
-//////////////////////////////////////////////////////////<br><br><br>
-
-
-<b>program.cs</b><br><br>
+//////////////////////////////////////////////////////////<br><br>
+<b> ⭐ program.cs</b><br><br><br>
 <b>
 using System.Reflection.Metadata;<br>
 using SkyNet;<br>
