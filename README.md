@@ -103,8 +103,8 @@ ASPNETCoreWeb/<br>
 (the SKYNET.dll file is in the bin\Debug\net10.0 foler in this demo project)<br>
 //////////////////////////////////////////////////////////<br>
 Prerequisite : install thru menu-view-terminal in Visual Studio<br>
-<b>3.</b> Excute command in the terminal -<b>dotnet add package Microsoft.Data.SqlClient</b><br>
-<b>4.</b> Excute command in the terminal -<b>dotnet add package System.Drawing.Common</b><br>
+<b>3.</b> Excute command in the terminal: <b>dotnet add package Microsoft.Data.SqlClient</b><br>
+<b>4.</b> Excute command in the terminal: <b>dotnet add package System.Drawing.Common</b><br>
 <b>5.</b> Add option to Properties/launchsetting.json file  : <b>"hotReloadEnabled":false</b><br>
 ("hotReloadEnabled=true" could interrupt page display while development)<br><br>
 //////////////////////////////////////////////////////////<br>
