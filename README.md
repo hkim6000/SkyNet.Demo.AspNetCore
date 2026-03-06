@@ -110,7 +110,7 @@ Prerequisite : install thru menu-view-terminal in Visual Studio<br>
 <b>5.</b> Add option to Properties/launchsetting.json file  : <b>"hotReloadEnabled":false</b><br>
 ("hotReloadEnabled=true" could interrupt page display while development)<br><br>
 //////////////////////////////////////////////////////////<br>
-<b> ⭐ 6.</b> program.cs for Asp.Net Core</b><br>
+<b> ⭐ 6. program.cs for Asp.Net Core</b><br>
 <br>
 ------------------------------------------------------------------------------<br>
 using SkyNet;<br>
