@@ -105,7 +105,7 @@ ASPNETCoreWeb/<br>
 //  Prerequisite : install thru menu-view-terminal in Visual Studio<br>
 //  <b>- dotnet add package Microsoft.Data.SqlClient</b><br>
 //  <b>- dotnet add package System.Drawing.Common</b><br>
-//  <b>- Add option to Properties/launchsetting.json file  : <u>"hotReloadEnabled":false</u></b><br>
+//  - Add option to Properties/launchsetting.json file  : <b><u>"hotReloadEnabled":false</u></b><br>
 //////////////////////////////////////////////////////////<br>
 // "hotReloadEnabled=true" could interrupt page display while development
 //////////////////////////////////////////////////////////<br><br>
