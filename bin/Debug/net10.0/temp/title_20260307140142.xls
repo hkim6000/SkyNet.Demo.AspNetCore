@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?mso-application progid="Excel.Sheet" ?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" >
+<DocumentProperties xmlns:o="urn:schemas-microsoft-com:office:office" >
+<Author>ASPNETCoreWeb</Author>
+<LastAuthor>ASPNETCoreWeb</LastAuthor>
+<Created>03/07/2026 14:01:42</Created>
+<LastSaved>03/07/2026 14:01:42</LastSaved>
+<Company>skyNet</Company>
+<Version>12.00</Version>
+</DocumentProperties>
+<Worksheet ss:Name="Sheet1" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+<Table>
+<Row ss:AutoFitHeight="0">
+<Cell><Data ss:Type="String">Code</Data></Cell>
+<Cell><Data ss:Type="String">Name</Data></Cell>
+<Cell><Data ss:Type="String">Branch</Data></Cell>
+<Cell><Data ss:Type="String">Upper</Data></Cell>
+<Cell><Data ss:Type="String">Date</Data></Cell>
+<Cell><Data ss:Type="String">Sorting</Data></Cell>
+<Cell><Data ss:Type="String">In Use</Data></Cell>
+<Cell><Data ss:Type="String">Modified</Data></Cell>
+<Cell><Data ss:Type="String">By</Data></Cell>
+</Row>
+<Row ss:AutoFitHeight="0">
+<Cell><Data ss:Type="String">1000000</Data></Cell>
+<Cell><Data ss:Type="String">SkyLite Company</Data></Cell>
+<Cell><Data ss:Type="String">Raleigh HQ</Data></Cell>
+<Cell><Data ss:Type="String"></Data></Cell>
+<Cell><Data ss:Type="String">2025-01-01</Data></Cell>
+<Cell><Data ss:Type="String">1000000</Data></Cell>
+<Cell><Data ss:Type="String">1</Data></Cell>
+<Cell><Data ss:Type="String">1/25/2026 3:50:32 AM</Data></Cell>
+<Cell><Data ss:Type="String">Joseph Brown</Data></Cell>
+</Row>
+<Row ss:AutoFitHeight="0">
+<Cell><Data ss:Type="String">1000001</Data></Cell>
+<Cell><Data ss:Type="String">General Affair</Data></Cell>
+<Cell><Data ss:Type="String">New York Center</Data></Cell>
+<Cell><Data ss:Type="String">1001200</Data></Cell>
+<Cell><Data ss:Type="String">2026-01-21</Data></Cell>
+<Cell><Data ss:Type="String">1000002</Data></Cell>
+<Cell><Data ss:Type="String">1</Data></Cell>
+<Cell><Data ss:Type="String">2/23/2026 12:24:08 PM</Data></Cell>
+<Cell><Data ss:Type="String">Joseph Brown</Data></Cell>
+</Row>
+<Row ss:AutoFitHeight="0">
+<Cell><Data ss:Type="String">1001200</Data></Cell>
+<Cell><Data ss:Type="String">Western Audit Center</Data></Cell>
+<Cell><Data ss:Type="String">Raleigh HQ</Data></Cell>
+<Cell><Data ss:Type="String">1000000</Data></Cell>
+<Cell><Data ss:Type="String">2026-01-20</Data></Cell>
+<Cell><Data ss:Type="String">1001200</Data></Cell>
+<Cell><Data ss:Type="String">1</Data></Cell>
+<Cell><Data ss:Type="String">1/26/2026 9:05:21 PM</Data></Cell>
+<Cell><Data ss:Type="String">Joseph Brown</Data></Cell>
+</Row>
+<Row ss:AutoFitHeight="0">
+<Cell><Data ss:Type="String">1310026</Data></Cell>
+<Cell><Data ss:Type="String">Conv Store</Data></Cell>
+<Cell><Data ss:Type="String">New York Center</Data></Cell>
+<Cell><Data ss:Type="String">1000000</Data></Cell>
+<Cell><Data ss:Type="String">2026-01-20</Data></Cell>
+<Cell><Data ss:Type="String">1001250</Data></Cell>
+<Cell><Data ss:Type="String">1</Data></Cell>
+<Cell><Data ss:Type="String">1/26/2026 9:40:41 PM</Data></Cell>
+<Cell><Data ss:Type="String">Joseph Brown</Data></Cell>
+</Row>
+<Row ss:AutoFitHeight="0">
+<Cell><Data ss:Type="String">1001300</Data></Cell>
+<Cell><Data ss:Type="String">IT Center</Data></Cell>
+<Cell><Data ss:Type="String">Raleigh HQ</Data></Cell>
+<Cell><Data ss:Type="String">1000000</Data></Cell>
+<Cell><Data ss:Type="String">2026-01-03</Data></Cell>
+<Cell><Data ss:Type="String">1001300</Data></Cell>
+<Cell><Data ss:Type="String">1</Data></Cell>
+<Cell><Data ss:Type="String">1/21/2026 5:30:54 PM</Data></Cell>
+<Cell><Data ss:Type="String">Joseph Brown</Data></Cell>
+</Row>
+<Row ss:AutoFitHeight="0">
+<Cell><Data ss:Type="String">1001400</Data></Cell>
+<Cell><Data ss:Type="String">POP Store</Data></Cell>
+<Cell><Data ss:Type="String">New York Center</Data></Cell>
+<Cell><Data ss:Type="String">1001200</Data></Cell>
+<Cell><Data ss:Type="String">2025-12-05</Data></Cell>
+<Cell><Data ss:Type="String">1001400</Data></Cell>
+<Cell><Data ss:Type="String">1</Data></Cell>
+<Cell><Data ss:Type="String">1/24/2026 4:22:15 PM</Data></Cell>
+<Cell><Data ss:Type="String">Joseph Brown</Data></Cell>
+</Row>
+<Row ss:AutoFitHeight="0">
+<Cell><Data ss:Type="String">1117400</Data></Cell>
+<Cell><Data ss:Type="String">Financial Department</Data></Cell>
+<Cell><Data ss:Type="String">New York Center</Data></Cell>
+<Cell><Data ss:Type="String">1000001</Data></Cell>
+<Cell><Data ss:Type="String">2026-01-02</Data></Cell>
+<Cell><Data ss:Type="String">1117400</Data></Cell>
+<Cell><Data ss:Type="String">1</Data></Cell>
+<Cell><Data ss:Type="String">2/23/2026 2:28:58 PM</Data></Cell>
+<Cell><Data ss:Type="String">Joseph Brown</Data></Cell>
+</Row>
+<Row ss:AutoFitHeight="0">
+<Cell><Data ss:Type="String">1117500</Data></Cell>
+<Cell><Data ss:Type="String">Entertainment Team</Data></Cell>
+<Cell><Data ss:Type="String">Raleigh HQ</Data></Cell>
+<Cell><Data ss:Type="String">1000001</Data></Cell>
+<Cell><Data ss:Type="String">2026-01-03</Data></Cell>
+<Cell><Data ss:Type="String">1117500</Data></Cell>
+<Cell><Data ss:Type="String">1</Data></Cell>
+<Cell><Data ss:Type="String">2/23/2026 2:30:50 PM</Data></Cell>
+<Cell><Data ss:Type="String">Joseph Brown</Data></Cell>
+</Row>
+</Table></Worksheet></Workbook>

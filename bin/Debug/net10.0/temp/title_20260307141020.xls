@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<?mso-application progid="Excel.Sheet" ?>
+<Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" >
+<DocumentProperties xmlns:o="urn:schemas-microsoft-com:office:office" >
+<Author>ASPNETCoreWeb</Author>
+<LastAuthor>ASPNETCoreWeb</LastAuthor>
+<Created>03/07/2026 14:10:20</Created>
+<LastSaved>03/07/2026 14:10:20</LastSaved>
+<Company>skyNet</Company>
+<Version>12.00</Version>
+</DocumentProperties>
+<Worksheet ss:Name="Sheet1" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet">
+<Table>
+<Row ss:AutoFitHeight="0">
+<Cell><Data ss:Type="String">Code</Data></Cell>
+<Cell><Data ss:Type="String">Name</Data></Cell>
+<Cell><Data ss:Type="String">Country</Data></Cell>
+<Cell><Data ss:Type="String">Alias</Data></Cell>
+<Cell><Data ss:Type="String">Sorting</Data></Cell>
+<Cell><Data ss:Type="String">InUse</Data></Cell>
+<Cell><Data ss:Type="String">Modified</Data></Cell>
+<Cell><Data ss:Type="String">By</Data></Cell>
+</Row>
+<Row ss:AutoFitHeight="0">
+<Cell><Data ss:Type="String">0500</Data></Cell>
+<Cell><Data ss:Type="String">Raleigh</Data></Cell>
+<Cell><Data ss:Type="String">United States of America</Data></Cell>
+<Cell><Data ss:Type="String">USA</Data></Cell>
+<Cell><Data ss:Type="String">1</Data></Cell>
+<Cell><Data ss:Type="String">1</Data></Cell>
+<Cell><Data ss:Type="String">3/5/2026 12:51:23 AM</Data></Cell>
+<Cell><Data ss:Type="String">Joseph Brown</Data></Cell>
+</Row>
+<Row ss:AutoFitHeight="0">
+<Cell><Data ss:Type="String">1500</Data></Cell>
+<Cell><Data ss:Type="String">Tokyo</Data></Cell>
+<Cell><Data ss:Type="String">Japan</Data></Cell>
+<Cell><Data ss:Type="String">JPY</Data></Cell>
+<Cell><Data ss:Type="String">12</Data></Cell>
+<Cell><Data ss:Type="String">1</Data></Cell>
+<Cell><Data ss:Type="String">3/7/2026 1:19:49 AM</Data></Cell>
+<Cell><Data ss:Type="String">Joseph Brown</Data></Cell>
+</Row>
+<Row ss:AutoFitHeight="0">
+<Cell><Data ss:Type="String">0100</Data></Cell>
+<Cell><Data ss:Type="String">New York</Data></Cell>
+<Cell><Data ss:Type="String">United States of America</Data></Cell>
+<Cell><Data ss:Type="String">USA</Data></Cell>
+<Cell><Data ss:Type="String">100</Data></Cell>
+<Cell><Data ss:Type="String">1</Data></Cell>
+<Cell><Data ss:Type="String">3/5/2026 11:45:37 AM</Data></Cell>
+<Cell><Data ss:Type="String">Joseph Brown</Data></Cell>
+</Row>
+<Row ss:AutoFitHeight="0">
+<Cell><Data ss:Type="String">1000</Data></Cell>
+<Cell><Data ss:Type="String">Seoul</Data></Cell>
+<Cell><Data ss:Type="String">South Korea</Data></Cell>
+<Cell><Data ss:Type="String">KOR</Data></Cell>
+<Cell><Data ss:Type="String">100</Data></Cell>
+<Cell><Data ss:Type="String">1</Data></Cell>
+<Cell><Data ss:Type="String">1/17/2026 1:04:12 AM</Data></Cell>
+<Cell><Data ss:Type="String">Joseph Brown</Data></Cell>
+</Row>
+</Table></Worksheet></Workbook>
