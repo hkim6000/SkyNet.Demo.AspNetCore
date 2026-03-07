@@ -1,49 +1,23 @@
-using System.Reflection.Metadata;
-using SkyNet;
-
-var builder = WebApplication.CreateBuilder(args);
-
 //////////////////////////////////////////////////////////
-//  0.prerequisite : install - view terminal & Edit project file
+//  prerequisite : install - view terminal & Edit project file
 //  - dotnet add package Microsoft.Data.SqlClient
 //  - dotnet add package System.Drawing.Common
 //  - Add option to Properties/launchsetting.json file  : "hotReloadEnabled": false
 //////////////////////////////////////////////////////////
 
+using SkyNet;
+
+var builder = WebApplication.CreateBuilder(args);
+
 //////////////////////////////////////////////////////////
-//1.Add HttpContext Service
-//////////////////////////////////////////////////////////
-builder.Services.AddHttpContextAccessor(); 
+builder.Services.AddHttpContextAccessor();    //1.Add HttpContext Service
 //////////////////////////////////////////////////////////
 
 var app = builder.Build();
 
 //////////////////////////////////////////////////////////
-//2. use SKYNET.IHANDLER as middleware service
-//////////////////////////////////////////////////////////
-app.UseMiddleware<IHandler>();
-//////////////////////////////////////////////////////////
-
- 
-//////////////////////////////////////////////////////////
-//3. use static http class service
-//////////////////////////////////////////////////////////
-app.UseStaticHttpCurrent(); 
+app.UseMiddleware<IHandler>();  //2. use SKYNET.IHANDLER as middleware service
+app.UseStaticHttpCurrent();    //3. use static http class service
 //////////////////////////////////////////////////////////
 
 app.Run();
-
-
-//////////////////////////////////////////////////////////
-/// 4. define "StaticHttpCurrent"
-//////////////////////////////////////////////////////////
-//public static class StaticHttpCurrent
-//{
-//    public static void UseStaticHttpCurrent(this IApplicationBuilder app)
-//    {
-//        var httpContextAccessor = app.ApplicationServices.GetRequiredService<IHttpContextAccessor>();
-//        var WebHostEnvironment = app.ApplicationServices.GetRequiredService<IWebHostEnvironment>();
-//        SkyNet.HttpCurrent.Configure(httpContextAccessor, WebHostEnvironment);
-//    }
-//}
-//////////////////////////////////////////////////////////
