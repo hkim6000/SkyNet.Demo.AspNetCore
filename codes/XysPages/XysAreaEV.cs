@@ -2,6 +2,7 @@
 using SkyNet.ToolKit;
 using ASPNETCoreWeb.codes.XysBases;
 using System.Data;
+using SkyNet;
 
 namespace ASPNETCoreWeb.codes.XysPages
 {
@@ -84,7 +85,7 @@ namespace ASPNETCoreWeb.codes.XysPages
             SqlParams.Add(new SqlParameter { ParameterName = "@AreaName", Value = ViewPart.Field("AreaName").value, SqlDbType = SqlDbType.NVarChar });
             SqlParams.Add(new SqlParameter { ParameterName = "@CountryId", Value = ViewPart.Field("CountryId").value, SqlDbType = SqlDbType.NVarChar });
             SqlParams.Add(new SqlParameter { ParameterName = "@AreaOrder", Value = ViewPart.Field("AreaOrder").value, SqlDbType = SqlDbType.Int });
-            SqlParams.Add(new SqlParameter { ParameterName = "@AreaFlag", Value = Convert.ToDouble(ViewPart.Field("AreaFlag").value).ToString(), SqlDbType = SqlDbType.Int });
+            SqlParams.Add(new SqlParameter { ParameterName = "@AreaFlag", Value = Common.Val(ViewPart.Field("AreaFlag").value).ToString(), SqlDbType = SqlDbType.Int });
             SqlParams.Add(new SqlParameter { ParameterName = "@SYSUSR", Value = AppKey.UserId, SqlDbType = SqlDbType.NVarChar });
 
             return PutData(SqlWithParams(SQL, SqlParams));

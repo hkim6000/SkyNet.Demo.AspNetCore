@@ -150,7 +150,7 @@ namespace ASPNETCoreWeb.codes.XysPages
             }
 
             List<SqlParameter> SqlParams = new List<SqlParameter>();
-            SqlParams.Add(new SqlParameter { ParameterName = "@BltnId", Value = Convert.ToDouble(ViewPart.Field("BltnId").value).ToString(), SqlDbType = System.Data.SqlDbType.Int });
+            SqlParams.Add(new SqlParameter { ParameterName = "@BltnId", Value = Common.Val(ViewPart.Field("BltnId").value).ToString(), SqlDbType = System.Data.SqlDbType.Int });
             SqlParams.Add(new SqlParameter { ParameterName = "@BltnTitle", Value = ViewPart.Field("BltnTitle").value, SqlDbType = System.Data.SqlDbType.NVarChar });
             SqlParams.Add(new SqlParameter { ParameterName = "@BltnMemo", Value = ViewPart.Field("BltnMemo").value, SqlDbType = System.Data.SqlDbType.NVarChar });
             SqlParams.Add(new SqlParameter { ParameterName = "@CreatedBy", Value = ViewPart.Field("CreatedBy").value, SqlDbType = System.Data.SqlDbType.NVarChar });
@@ -190,7 +190,7 @@ namespace ASPNETCoreWeb.codes.XysPages
             };
 
             List<SqlParameter> SqlParams = new List<SqlParameter>();
-            SqlParams.Add(new SqlParameter { ParameterName = "@BltnId", Value = Convert.ToDouble(ViewPart.Field("BltnId").value).ToString(), SqlDbType = System.Data.SqlDbType.Int });
+            SqlParams.Add(new SqlParameter { ParameterName = "@BltnId", Value = Common.Val(ViewPart.Field("BltnId").value).ToString(), SqlDbType = System.Data.SqlDbType.Int });
 
             return PutData(SqlWithParams(SQL, SqlParams));
         }
