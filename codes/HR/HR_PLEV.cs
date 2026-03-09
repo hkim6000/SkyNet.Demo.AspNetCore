@@ -95,7 +95,7 @@ namespace ASPNETCoreWeb.codes.HR
             SqlParams.Add(new SqlParameter { ParameterName = "@PLBDT", Value = DateTime.Parse(ViewPart.Field("PLBDT").value).ToString(StdDateFormat), SqlDbType = SqlDbType.NVarChar });
             SqlParams.Add(new SqlParameter { ParameterName = "@PLEDT", Value = "2999-12-31", SqlDbType = SqlDbType.NVarChar });
             SqlParams.Add(new SqlParameter { ParameterName = "@PLWTP", Value = ViewPart.Field("PLWTP").value, SqlDbType = SqlDbType.NVarChar });
-            SqlParams.Add(new SqlParameter { ParameterName = "@PLWRAT", Value = Convert.ToDouble(string.IsNullOrEmpty(ViewPart.Field("PLWRAT").value) ? "0" : ViewPart.Field("PLWRAT").value), SqlDbType = SqlDbType.Float });
+            SqlParams.Add(new SqlParameter { ParameterName = "@PLWRAT", Value = Common.Val(string.IsNullOrEmpty(ViewPart.Field("PLWRAT").value) ? "0" : ViewPart.Field("PLWRAT").value), SqlDbType = SqlDbType.Float });
             SqlParams.Add(new SqlParameter { ParameterName = "@OGNO", Value = Common.Val(ViewPart.Field("OGNO").value), SqlDbType = SqlDbType.BigInt });
             SqlParams.Add(new SqlParameter { ParameterName = "@SYSUSR", Value = AppKey.UserId, SqlDbType = SqlDbType.NVarChar });
 
