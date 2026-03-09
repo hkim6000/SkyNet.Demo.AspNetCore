@@ -1,8 +1,8 @@
-﻿using Azure.Core;
+﻿using ASPNETCoreWeb.codes.XysPages;
+using Azure.Core;
 using Microsoft.Data.SqlClient;
 using SkyNet;
 using SkyNet.ToolKit;
-using ASPNETCoreWeb.codes.XysPages;
 using System.Data;
 using System.Drawing;
 using System.Globalization;
@@ -331,26 +331,19 @@ namespace ASPNETCoreWeb.codes.XysBases
 
         protected internal TitleSection2 PageTitle(bool showTimer = true)
         {
-            SkyNet.ToolKit.Timer tmr = new(){ InnerText = "00:00" };
+            SkyNet.ToolKit.Timer tmr = new() { InnerText = "00:00" };
             tmr.SetAttribute(HtmlAttributes.id, "tmr");
             tmr.SetStyle(HtmlStyles.top, "38px");
             tmr.SetStyle(HtmlStyles.right, "90px");
 
-            //string imgfile = PhysicalFolder + "photos\\" + AppKey.UserId + ".jpg";
-            //if (!File.Exists(imgfile))
-            //{
-            //    imgfile = ImagePath + "img_fakeuser.jpg";
-            //}
-            //else
-            //{
-            //    //imgfile = GetPhotoData(imgfile);
-            //    }
-            //}
-
-            string imgfile = VirtualPath + "photos//" + AppKey.UserId + ".jpg";
+            string imgfile = PhysicalFolder + @"photos\" + AppKey.UserId + ".jpg";
             if (!File.Exists(imgfile))
             {
                 imgfile = ImagePath + "img_fakeuser.jpg";
+            }
+            else
+            {
+                imgfile = GetPhotoData(imgfile);
             }
 
             TitleSection2 tSector = new TitleSection2();
@@ -704,12 +697,12 @@ namespace ASPNETCoreWeb.codes.XysBases
             }
             else
             {
-                string FileName = PhysicalFolder + "photos\\" + userid + ".jpg";
+                string FileName = PhysicalFolder + @"photos\" + userid + ".jpg";
                 try
                 {
                     using (var stream = new FileStream(FileName, FileMode.Create))
                     {
-                        hfc[0].CopyToAsync(stream);
+                        hfc[0].CopyToAsync(stream).GetAwaiter().GetResult();
                     }
 
                     _ApiResponse.SetElementAttribute(imgid, HtmlAttributes.src, GetPhotoData(FileName));
@@ -1023,5 +1016,5 @@ namespace ASPNETCoreWeb.codes.XysBases
         public int Sort { get; set; } = 0;
     }
 
- 
+
 }
